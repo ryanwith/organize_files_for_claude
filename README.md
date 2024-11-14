@@ -1,11 +1,8 @@
 # Claude File Organizer
 
-A Python utility for copying relevant project files to a directory to be easily uploaded to Claude, Anthropic's AI assistant. It selectively copies files based on extensions and .gitignore rules, organizing them into a clean git repository for easy sharing.  This allows you to upload your latest file states to a Claude project without having to manually click through all your folders to select and upload specific files.
+A Python utility for copying relevant project files to a directory to be easily uploaded to Claude, Anthropic's AI assistant. It selectively copies files based on extensions and .gitignore rules, organizing them into a target folder for easy uploading.  It commits all the files in that folder to a git repository so they're not lost, deletes them, and then copies the updated files to that folder.  This allows you to upload your latest file states to a Claude project without having to manually click through all your folders to select and upload specific files.
 
-This tool is particularly useful when you need to share multiple files with Claude while:
-- Excluding sensitive or unnecessary files
-- Maintaining a clear file structure
-- Following existing .gitignore rules
+This tool is particularly useful when you need to share specific files/file types in your project with claude without wanting to iterate through each subdirectory each time.
 
 ## Prerequisites
 
